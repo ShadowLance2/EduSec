@@ -1,0 +1,277 @@
+.nav-link:hover {
+    color: #ffc107;
+}
+
+
+/* Добавляем задний фон */
+.bg-image {
+    background-image: url('img/fon3.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0; /* Увеличим отступы сверху и снизу */
+    display: flex;
+    justify-content: center; /* Центрируем контент по горизонтали */
+    align-items: center; /* Центрируем контент по вертикали */
+}
+
+/* Стили для формы */
+.form {
+    background-color: rgba(255, 255, 255, 1); 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+.form h3 {
+    color: #000; /* Черный цвет текста заголовка */
+    font-size: 20px;
+}
+
+/* Стили для текста "Школа информационной безопасности EduSec Kor&Ch" */
+.bg-image h2 {
+    font-size: 46px; /* Размер шрифта 36 пикселей */
+}
+
+/* Стили для текста "Учебный проект по веб-разработке" */
+.bg-image p {
+    font-size: 24px; /* Размер шрифта 24 пикселя */
+}
+
+/* Стили для контейнера "Преимущества" */
+.bg-light {
+    background-color: #f8f9fa;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Стили для заголовка */
+.bg-light h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Стили для контейнеров с преимуществами */
+.advantage-container {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Стили для полупрозрачного слоя */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Стили для текста в полупрозрачном слое */
+.overlay p {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Стили для контейнера с заголовком и текстом */
+.container-fluid {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Стили для заголовка */
+h2.font-weight-bold {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Стили для обычного текста */
+p {
+    font-size: 18px;
+}
+
+/* Стили для общего контейнера */
+.large-container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative; /* Добавляем позиционирование для контейнера */
+}
+
+/* Стили для заголовка */
+.text-container h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 35px;
+    position: relative; /* Добавляем позиционирование для контейнера */
+}
+
+/* Стили для текста под заголовком */
+.text-container p {
+    font-size: 18px;
+}
+
+/* Стили для контейнеров-кружков */
+.circle-container {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.large-circle {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+/* Медиазапросы для экранов шириной до 770px */
+@media (max-width: 770px) {
+    .large-circle {
+        display: none; 
+    }
+}
+
+/* Стили для контейнера с изображением заднего фона */
+.bg-image-form {
+    background-image: url('img/form.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/* Стили для заголовка */
+.bg-image-form h2 {
+    margin-top: 45px;
+    font-size: 36px;
+}
+
+/* Стили для формы */
+.form-inline input {
+    width: auto;
+    margin-right: 3px;
+}
+
+
+/* Стили для кнопки в форме */
+.btn-primary {
+    background-color: rgb(187, 165, 142); /* Бежевый цвет кнопки */
+    border-color: rgb(187, 165, 142); /* Цвет рамки кнопки */
+}
+
+/* Стили для кнопки в форме при наведении */
+.btn-primary:hover {
+    background-color: rgb(160, 139, 118); /* Темный бежевый цвет при наведении */
+    border-color: rgb(160, 139, 118); /* Цвет рамки при наведении */
+}
+
+/* Стили для уменьшения размера контейнера .container-fluid */
+.bg-dark.container-fluid {
+    padding-top: 20px; /* Уменьшаем верхний отступ */
+    padding-bottom: 20px; /* Уменьшаем нижний отступ */
+}
+
+/* Стили для уменьшения размера контейнера .container внутри .container-fluid */
+.bg-dark.container {
+    max-width: 90%; /* Уменьшаем максимальную ширину контейнера */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Цвет фона футера */
+    padding: 40px 0; /* Внутренние отступы футера */
+    height: 200px;
+}
+
+.footer img {
+    width: 40px; /* Ширина иконок */
+    animation: pulse 2s infinite; 
+}
+
+.footer a {
+    color: #343a40; /* Цвет ссылок */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении на ссылки */
+    color: rgb(160, 139, 118); /* Более темный цвет при наведении */
+}
+
+.bg-dark {
+    background-color: rgb(73, 73, 73) !important; /* Новый цвет заднего фона контейнера */
+}
+
+.advantage-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* добавляем анимацию для свойства transform */
+}
+
+.advantage-container:hover {
+    transform: scale(1.1); /* увеличиваем размер блока при наведении */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* добавляем анимацию для свойства opacity */
+    text-align: center; /* Центрирование текста по горизонтали */
+    display: flex; /* Установка flex-контейнера для вертикального выравнивания */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    justify-content: center; /* Выравнивание элементов по горизонтали */
+}
+
+.advantage-container:hover .overlay {
+    opacity: 1; /* отображаем overlay при наведении */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* начальный масштаб */
+    }
+    50% {
+        transform: scale(1.1); /* увеличение масштаба на половину анимации */
+    }
+    100% {
+        transform: scale(1); /* возвращение к начальному масштабу */
+    }
+}
+
+/* Медиазапросы для экранов шириной до 476px */
+@media (max-width: 476px) {
+    .bg-image-form {
+        background-image: url('img/form.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 450px;
+    } 
+
+    .bg-dark h1 {
+        font-size: 22px;
+    }
+
+    .bg-image h2 {
+        font-size: 22px;
+    }
+
+    .bg-light h2 {
+        font-size: 22px;
+    }
+
+    .large-container h2 {
+        font-size: 22px;
+    }
+}
