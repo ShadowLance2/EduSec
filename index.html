@@ -6,6 +6,7 @@
     <title>Лендинг Школы по информационной безопасности</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
 </head>
 <body>
 
@@ -18,9 +19,15 @@
                     </div>
                     <div class="col-md-6 text-right">
                         <a href="#" id="about-link" class="text-white mx-3">О проекте</a>
-                        <a href="#" class="text-white mx-3">Преимущества</a>
-                        <a href="#" class="text-white mx-3">FAQ</a>
+                        <a href="#" id="services-link" class="text-white mx-3">Список услуг</a>
                         <a href="#" id="contact-link" class="text-white mx-3">Связаться с нами</a>
+                        <div id="user-actions" class="text-white d-inline-block ml-3">
+                            <br>
+                            <span id="current-user">anonymous</span>
+                            <a href="#" id="register-link" class="text-white mx-2">Регистрация</a>
+                            <a href="#" id="login-link" class="text-white mx-2">Вход</a>
+                            <a href="#" id="user-list-link" class="text-white mx-2">Список пользователей</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,30 +62,109 @@
         </div>
     </div>
 
-        <!-- Модальное окно "Связаться с нами" -->
-        <div id="contact-modal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close-contact">&times;</span>
-                <h2>Связаться с нами</h2>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="contact-name">Ваше имя</label>
-                        <input type="text" id="contact-name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Ваш email</label>
-                        <input type="email" id="contact-email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Ваше сообщение</label>
-                        <textarea id="contact-message" class="form-control" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
+    <!-- Модальное окно "Связаться с нами" -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-contact">&times;</span>
+            <h2>Связаться с нами</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Ваше имя</label>
+                    <input type="text" id="contact-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Ваш email</label>
+                    <input type="email" id="contact-email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Ваше сообщение</label>
+                    <textarea id="contact-message" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно "Регистрация" -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-register">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-username">Логин</label>
+                    <input type="text" id="register-username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-description">Описание</label>
+                    <input type="text" id="register-description" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно "Вход" -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-login">&times;</span>
+            <h2>Вход</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Логин</label>
+                    <input type="text" id="login-username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно "Список пользователей" -->
+    <div id="user-list-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-user-list">&times;</span>
+            <h2>Список пользователей</h2>
+            <ul id="user-list"></ul>
+            <div id="admin-user-functions" style="display: none;">
+                <h3>Удалить пользователя</h3>
+                <form id="delete-user-form">
+                    <input type="number" id="user-number" placeholder="Номер пользователя" required>
+                    <button type="submit">Удалить</button>
                 </form>
             </div>
         </div>
+    </div>
 
-    <script src="main.js"></script>
+    <!-- Модальное окно "Список услуг" -->
+    <div id="services-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-services">&times;</span>
+            <h2>Список услуг</h2>
+            <ul id="services-list"></ul>
+            <div id="admin-functions" style="display: none;">
+                <h3>Добавить услугу</h3>
+                <form id="new-service-form">
+                    <input type="text" id="service-name" placeholder="Название услуги" required>
+                    <input type="text" id="service-price" placeholder="Цена" required>
+                    <button type="submit">Добавить</button>
+                </form>
+                <h3>Удалить услугу</h3>
+                <form id="delete-service-form">
+                    <input type="number" id="service-number" placeholder="Номер услуги" required>
+                    <button type="submit">Удалить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container-fluid bg-image">
         <div class="container">
@@ -106,9 +192,6 @@
         </div>
     </div>
     
-    
-    
-
 <div class="container-fluid bg-light py-5">
     <div class="container text-center">
         <h2 class="text-dark mb-5">Преимущества нашей Школы информационной безопасности</h2>
@@ -171,8 +254,6 @@
     </div>
 </div>
 
-<script src="validation.js"></script>
-
 
 <footer class="footer">
     <div class="container text-center mb-4">
@@ -211,12 +292,21 @@
     </div>
 </footer>
 
+<script src="validation.js"></script>
+<script src="main.js"></script>
+<script src="auth.js"></script>
+<script src="services.js"></script>
+<script src="users.js"></script>
+
+
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     (function() {
         emailjs.init('IsS3cXuj4iMyJTrZv');
     })();
 </script>
+
+
 
 </body>
 </html>

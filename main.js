@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         displayAboutData();
     });
 
-    // Обработчик для ссылки "О проекте" в футере
+     // Обработчик для ссылки "О проекте" в футере
     document.getElementById('about-link-footer').addEventListener('click', (event) => {
         event.preventDefault();
         displayAboutData();
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleModal('admin-modal');
     });
 
-    // Обработчик для формы "Связаться с нами"
+     // Обработчик для формы "Связаться с нами"
     document.getElementById('contact-form').addEventListener('submit', (event) => {
         event.preventDefault();
         sendEmail();
@@ -58,8 +58,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // Обработчик для ссылки "Админ" в футере
     document.getElementById('admin-link-footer').addEventListener('click', (event) => {
         event.preventDefault();
-        toggleModal('admin-modal');
+        const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+        if (loggedInUser && loggedInUser.username === 'admin') {
+            toggleModal('admin-modal');
+        } else {
+            alert('Только администратор может получить доступ к этой странице.');
+        }
     });
+
+    // Обработчик для ссылки "Список пользователей"
+    document.getElementById('user-list-link').addEventListener('click', (event) => {
+        event.preventDefault();
+        displayUserList();
+        toggleModal('user-list-modal');
+    });
+
+    // Обработчик для кнопки закрытия модального окна "Список пользователей"
+    document.getElementById('close-user-list').addEventListener('click', () => {
+        toggleModal('user-list-modal');
+    });
+
+    // Функция для отображения списка пользователей
+    function displayUserList() {
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        const userList = document.getElementById('user-list');
+        userList.innerHTML = '';
+
+        users.forEach((user, index) => {
+            if (user.username !== 'admin') {
+                const listItem = document.createElement('li');
+                listItem.innerText = `${index + 1}. ${user.username}: ${user.description}`;
+                userList.appendChild(listItem);
+            }
+        });
+    }
 });
 
 // Функция для отображения данных о проекте
