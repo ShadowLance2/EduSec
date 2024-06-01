@@ -1,7 +1,7 @@
-function validateNewForm() {
-    var clientName = document.getElementById('client-name_2').value;
-    var clientEmail = document.getElementById('client-email_2').value;
-    var clientPhone = document.getElementById('client-phone_2').value;
+function validateNewForm_3() {
+    var clientName = document.getElementById('client-name_3').value;
+    var clientEmail = document.getElementById('client-email_3').value;
+    var clientPhone = document.getElementById('client-phone_3').value;
     if (clientName.trim() === "") {
         alert("Введите имя");
         return false;

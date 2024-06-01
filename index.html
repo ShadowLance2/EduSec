@@ -176,16 +176,16 @@
                     <p class="text-white">Учебный проект по веб-разработке</p>
                 </div>
                 <div class="col-md-6">
-                    <form class="form" action="#" method="post">
+                    <form class="form" action="#" method="post" onsubmit="return validateNewForm_3()">
                         <h3 class="text-black mb-3">Присоединяйтесь к нашей школе и станьте экспертом в области информационной безопасности</h3>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\- ]+" required>
+                            <input type="text" class="form-control" placeholder="Ваше имя" id="client-name_3" pattern="[A-Za-zА-Яа-яЁё\- ]+" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Электронная почта" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Пожалуйста, введите корректный адрес электронной почты в формате example@mail.com">
+                            <input type="email" class="form-control" placeholder="Электронная почта" id="client-email_3" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Пожалуйста, введите корректный адрес электронной почты в формате example@mail.com">
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Номер телефона" pattern="\+[0-9]{11}" required title="Пожалуйста, введите номер телефона в формате +XXXXXXXXXXX">
+                            <input type="tel" class="form-control" placeholder="Номер телефона" id="client-phone_3" pattern="\+[0-9]{11}" required title="Пожалуйста, введите номер телефона в формате +XXXXXXXXXXX">
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Записаться</button>
                     </form>
@@ -326,13 +326,13 @@
         <h2 class="font-weight-bold text-white mb-4">Учебный проект по веб-разработке</h2>
         <form class="form-inline justify-content-center" action="#" method="post" onsubmit="return validateNewForm()">
             <div class="form-group mx-sm-3 mb-2">
-                <input type="text" class="form-control" placeholder="Имя" id="client-name" pattern="[A-Za-zА-Яа-яЁё\- ]+" required>
+                <input type="text" class="form-control" placeholder="Имя" id="client-name_2" pattern="[A-Za-zА-Яа-яЁё\- ]+" required>
             </div>
             <div class="form-group mx-sm-3 mb-2">
-                <input type="tel" class="form-control" placeholder="Телефон" id="client-phone" required>
+                <input type="tel" class="form-control" placeholder="Телефон" id="client-phone_2" required>
             </div>
             <div class="form-group mx-sm-3 mb-2">
-                <input type="email" class="form-control" placeholder="E-mail" id="client-email" required>
+                <input type="email" class="form-control" placeholder="E-mail" id="client-email_2" required>
             </div>
             <button type="submit" class="btn btn-primary mb-2">Получить консультацию</button>
         </form>
@@ -384,6 +384,7 @@
 <script src="services.js"></script>
 <script src="users.js"></script>
 <script src="usl-val.js"></script>
+<script src="val-3.js"></script>
 
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
