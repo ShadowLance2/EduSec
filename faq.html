@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <div class="row align-items-center py-3">
+                    <div class="col-md-6">
+                        <h1 class="text-white">Школа информационной безопасности EduSec</h1>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="index.html" class="text-white mx-3">Главная</a>
+                        <a href="advantages.html" class="text-white mx-3">Преимущества</a>
+                        <a href="faq.html" class="text-white mx-3">FAQ</a>
+                        <span id="current-user" class="text-white mx-3">anonymous</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+        <div id="faq-list" class="list-group">
+            <!-- Список FAQ будет добавлен динамически -->
+        </div>
+        <div id="admin-add-faq" class="mt-4" style="display: none;">
+            <h4>Добавить новый вопрос</h4>
+            <input type="text" id="new-question" class="form-control mb-2" placeholder="Введите новый вопрос">
+            <input type="text" id="new-answer" class="form-control mb-2" placeholder="Введите новый ответ">
+            <button class="btn btn-primary" onclick="addFaq()">Добавить</button>
+        </div>
+        <div id="admin-remove-faq" class="mt-4" style="display: none;">
+            <h4>Удалить вопрос</h4>
+            <input type="number" id="remove-faq-number" class="form-control mb-2" placeholder="Введите номер вопроса">
+            <button class="btn btn-danger" onclick="removeFaq()">Удалить</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>
