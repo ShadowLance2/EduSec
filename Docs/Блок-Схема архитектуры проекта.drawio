@@ -1,0 +1,191 @@
+<mxfile host="Electron" modified="2024-06-02T13:21:40.607Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="_aSKchxpvPmk_eqVw7aM" version="24.1.0" type="device">
+  <diagram name="Страница — 1" id="gkseb2dXokUKUWMRRePb">
+    <mxGraphModel dx="2694" dy="1243" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-1" value="Схема архитектуры проекта EduSec" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=64;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="150" width="1240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-2" value="Клиентская часть - Frontend" style="swimlane;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1;gradientColor=none;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="460" y="230" width="1150" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-3" value="&lt;b&gt;Навигационное меню&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-2">
+          <mxGeometry x="60" y="80" width="150" height="160" as="geometry">
+            <mxRectangle x="90" y="100" width="170" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-4" value="Ссылки на страницы: Главная, О проекте, Преимущества, Список услуг, FAQ,&amp;nbsp;Связаться с нами" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-3">
+          <mxGeometry y="30" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-14" value="Модальные окна" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-2">
+          <mxGeometry x="270" y="80" width="150" height="160" as="geometry">
+            <mxRectangle x="90" y="100" width="170" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-15" value="Регистрация&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Вход&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Список пользователей&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-14">
+          <mxGeometry y="30" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-17" value="Основное наполнение главной страницы" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-2">
+          <mxGeometry x="60" y="320" width="360" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-19" value="8 Блоков-Контейнеров" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="30" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-20" value="3 Формы с наличием валидации" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="200" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-21" value="Ссылки на динамические страницы" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="30" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-22" value="Ссылка на форму для отправки E-mail сообщения с сайта" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="200" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-23" value="Изображения составляющие задний фон блоков" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="30" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-25" value="Анимированные элементы страницы" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="200" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-26" value="Слайдер со списком услуг" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="30" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-27" value="Изображения, представленные как отдельные элементы" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="200" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-93" value="index.html" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-17">
+          <mxGeometry x="110" y="390" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-28" value="Динамические страницы" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-2">
+          <mxGeometry x="490" y="320" width="510" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="horrCFICGAH1MQ6NSnCZ-28" source="horrCFICGAH1MQ6NSnCZ-37" target="horrCFICGAH1MQ6NSnCZ-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-37" value="Страница - &quot;Преимущества&quot;, содержащая динамически задаваемый список преимуществ, который может изменяться администратором" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-28">
+          <mxGeometry x="40" y="160" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="horrCFICGAH1MQ6NSnCZ-28" source="horrCFICGAH1MQ6NSnCZ-38" target="horrCFICGAH1MQ6NSnCZ-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="horrCFICGAH1MQ6NSnCZ-28" source="horrCFICGAH1MQ6NSnCZ-38" target="horrCFICGAH1MQ6NSnCZ-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-38" value="Ссылки на страницы внизу страницы (footer)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-28">
+          <mxGeometry x="190" y="40" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="horrCFICGAH1MQ6NSnCZ-28" source="horrCFICGAH1MQ6NSnCZ-40" target="horrCFICGAH1MQ6NSnCZ-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-40" value="Страница - &quot;FAQ&quot; - часто задаваемые вопросы, содержащая динамически задаваемый список вопросов, с возможностью редактирования администратором" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-28">
+          <mxGeometry x="320" y="160" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-89" value="faq.html" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-28">
+          <mxGeometry x="330" y="350" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-90" value="advantages.html" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-28">
+          <mxGeometry x="55" y="350" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="horrCFICGAH1MQ6NSnCZ-2" source="horrCFICGAH1MQ6NSnCZ-15" target="horrCFICGAH1MQ6NSnCZ-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-45" value="Выпадающие окна (модальные)" style="swimlane;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-2">
+          <mxGeometry x="560" y="60" width="290" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-47" value="Модальное окно &quot;О проекте&quot;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Модальное окно &quot;Список услуг&quot;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Модальное окно &quot;Связаться с нами&quot;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Модальное окно &quot;Админ&quot;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-45">
+          <mxGeometry x="10" y="40" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-100" value="Дизайн и адаптив" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-2">
+          <mxGeometry x="900" y="40" width="200" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-96" value="main.css" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-100">
+          <mxGeometry x="35" y="50" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-97" value="bootstrap" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-100">
+          <mxGeometry x="35" y="150" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-48" value="Серверная часть - Backend" style="swimlane;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1;gradientColor=none;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="230" width="1170" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-71" value="Логика аутентификации" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="80" y="90" width="180" height="160" as="geometry">
+            <mxRectangle x="90" y="100" width="170" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-72" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Хеширование паролей&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Проверка данных пользователей&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-71">
+          <mxGeometry y="30" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-73" value="Логика управления данными" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="360" y="90" width="180" height="170" as="geometry">
+            <mxRectangle x="90" y="100" width="170" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-74" value="Добавление, удаление различных элементов, выводимых из localstorage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-73">
+          <mxGeometry y="40" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-75" value="Локальное хранилище (localstorage)" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="30" y="310" width="540" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-84" value="Хранение данных пользователей" style="swimlane;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-75">
+          <mxGeometry x="20" y="100" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-85" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Список пользователей&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Данные пользователей - логины и пароли (не хранятся в открытом виде)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Текущий пользователь&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-84">
+          <mxGeometry x="10" y="50" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-86" value="Хранение прочих данных" style="swimlane;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-75">
+          <mxGeometry x="300" y="100" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-87" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Список предоставляемых услуг&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Список преимуществ&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Список вопросов и ответов&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-86">
+          <mxGeometry x="10" y="60" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-110" value="Динамические страницы" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="650" y="360" width="210" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-115" value="advantages.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-110">
+          <mxGeometry x="40" y="70" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-116" value="faq.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-110">
+          <mxGeometry x="40" y="190" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-117" value="Логика аутентификации и регистрации" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;startSize=40;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="720" y="70" width="340" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-118" value="auth.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-117">
+          <mxGeometry x="20" y="55" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-120" value="validation.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-117">
+          <mxGeometry x="20" y="150" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-121" value="usl-val.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-117">
+          <mxGeometry x="190" y="55" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-122" value="val-3.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-117">
+          <mxGeometry x="190" y="150" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-123" value="Список пользователей и услуг" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;strokeWidth=2;startSize=40;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="920" y="360" width="210" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-124" value="services.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-123">
+          <mxGeometry x="40" y="70" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-125" value="users.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-123">
+          <mxGeometry x="40" y="190" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-126" value="Основная логика и вывод информации о проекте" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;startSize=40;" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="765" y="700" width="250" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-127" value="main.js" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-126">
+          <mxGeometry x="60" y="50" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="horrCFICGAH1MQ6NSnCZ-128" value="localstorage" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="horrCFICGAH1MQ6NSnCZ-48">
+          <mxGeometry x="230" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
